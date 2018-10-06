@@ -45,29 +45,3 @@ body {
 .active {
   background-color: green;
 }
-
-/* main section */
-.main-section {
-  margin-top: 70px;
-  width: 100%;
-  min-width: 1200px;
-}
-.brief-intro {
-  width: 80%;
-  height: 180px;
-  margin:0 0;
-}
-.brief-intro p{
-  text-align: center;
-  font-size: 40px;
-}
-.self-portrait {
-  display: block;
-  margin-left: 20px;
-  height: 180px;
-  width: 150px
-}
-img {
-  height: 200px;
-  width: 300px;
-}

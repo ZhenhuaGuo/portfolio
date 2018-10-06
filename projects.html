@@ -6,68 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
-    <link rel="stylesheet" href="CSS/projects.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah%7COpen+Sans:400,700%7CPoppins%7CSpecial+Elite"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="projects">
     <!-- nav bar -->
     <header class="top-header">
         <nav class="top-nav">
+            <a class="active" href="index.html"> <i class="fas fa-home home-icon"></i></a>
             <a href="projects.html">Projects</a>
             <a href="aboutMe.html">About Me</a>
-            <a class="active" href="index.html"> <i class="fas fa-home home-icon"></i></a>
-            <a href="resume.html">Resume</a>
             <a href="contactMe.html">Contact Me</a>
         </nav>
     </header>
 
 
-    <!-- Main Section -->
+    <!-- Project Section -->
     <div class="main-section">
-        <h2>Show You some of My Projects</h2>
-        <div>
-            <img class="self-portrait" src="images/self2.JPG" alt="Photo ID">
-        </div>
-        <!-- item nav -->
-        <!-- nav icon -->
-        <!-- main nav bar -->
-        <nav>
-            <a href=".project-one">Event Search and Recommendation</a>
-            <br>
-            <a href=".project-two">Online Shopping and Ordering System</a>
-        </nav>
+        <h2 class="project-title">Show You some of My Projects</h2>
+        <div class="project-section">
+            <div class="project-nav">
+                <img class="self-portrait" src="images/self2.JPG" alt="Photo ID">
+                <br>
+                <br>
+                <nav>
+                    <ol>
+                        <li>Event Search and Recommendation</li>
+                        <li>Online Shopping and Ordering System</li>
+                    </ol>
+                </nav>
+            </div>
 
-        <!-- project div -->
-        <div>
-            <!-- project 1 -->
-            <p class="project-one">
-                I designed an interactive web page for users to search events and updata preferences and view the
-                recommendation by using
-                AJAX technology. This included builting databses with MySQL and MongoDB to store user information and
-                preference,
-                Creating Java servlets with RESTful APIs to handle HTTP requests and responses message, designing the
-                content-based
-                recommendation for cold start and the user-based recommendation for improving event recommendation. I
-                improved
-                precision of recommendation by ordering events based on distance.
-            </p>
-            <img src="images/event_search.jpg" alt="LBS event search">
-        </div>
-        <div>
-            <!-- project 2 -->
-            <p class="project-two">
-                I used Spring framework to build a web application for users to shop and order items online. This
-                included Building a web
-                application based on Spring MVC to support item search and listing (dependency injection, inversion of
-                control,
-                REST API etc.), using Spring Security to implement OAuth2 based authentication and utilizing Hibernate
-                to
-                provide better support of database operations and developing a Spring Web Flow to support item
-                ordering.
-            </p>
-            <img src="images/shopping.jpg" alt="shopping website example">
+            <div class="project-content">
+                <!-- project 1 -->
+                <div class="project project-one">
+                    <p>
+                        I designed an interactive web page for users to search events and updata preferences and view
+                        the
+                        recommendation by using
+                        AJAX technology. This included builting databses with MySQL and MongoDB to store user
+                        information and
+                        preference,
+                        Creating Java servlets with RESTful APIs to handle HTTP requests and responses message,
+                        designing the
+                        content-based
+                        recommendation for cold start and the user-based recommendation for improving event
+                        recommendation. I
+                        improved
+                        precision of recommendation by ordering events based on distance.
+                    </p>
+                    <img class="project-pic" src="images/event_search.jpg" alt="LBS event search">
+                </div>
+                <!-- project 2 -->
+                <div class="project project-two hidden">
+                    <p>
+                        I used Spring framework to build a web application for users to shop and order items online.
+                        This
+                        included Building a web
+                        application based on Spring MVC to support item search and listing (dependency injection,
+                        inversion of
+                        control,
+                        REST API etc.), using Spring Security to implement OAuth2 based authentication and utilizing
+                        Hibernate
+                        to
+                        provide better support of database operations and developing a Spring Web Flow to support item
+                        ordering.
+                    </p>
+                    <img class="project-pic" src="images/shopping.jpg" alt="shopping website example">
+                </div>
+            </div>
+
         </div>
     </div>
 
