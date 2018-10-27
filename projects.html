@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+    <link rel="stylesheet" href="CSS/html5reset-1.6.1.css">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
@@ -15,19 +16,20 @@
 
 <body class="projects">
     <!-- nav bar -->
-    <header class="top-header">
-        <nav class="top-nav">
-            <a class="active" href="index.html"> <i class="fas fa-home home-icon"></i>Home Page</a>
-            <a href="projects.html">Projects</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="contactme.html">Contact Me</a>
-        </nav>
-    </header>
+    <nav class="top-nav" id='myTopnav'>
+        <a class="active" href="index.html"> <i class="fas fa-home home-icon"></i> Home Page</a>
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contactme.html">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"> More</i>
+        </a>
+    </nav>
 
 
     <!-- Project Section -->
     <div class="main-section">
-        <h2 class="project-title">Show You some of My Projects</h2>
+        <h1 class="project-title">Some of My Projects</h1>
         <div class="project-section">
             <div class="project-nav">
                 <img class="self-portrait" src="images/self2.JPG" alt="Photo ID">
@@ -46,18 +48,10 @@
                 <div class="project project-one">
                     <p>
                         I designed an interactive web page for users to search events and updata preferences and view
-                        the
-                        recommendation by using
-                        AJAX technology. This included builting databses with MySQL and MongoDB to store user
-                        information and
-                        preference,
-                        Creating Java servlets with RESTful APIs to handle HTTP requests and responses message,
-                        designing the
-                        content-based
-                        recommendation for cold start and the user-based recommendation for improving event
-                        recommendation. I
-                        improved
-                        precision of recommendation by ordering events based on distance.
+                        the recommendation by using AJAX technology. This included builting databses with MySQL and MongoDB to store user
+                        information and preference, Creating Java servlets with RESTful APIs to handle HTTP requests and responses
+                        message, designing the content-based recommendation for cold start and the user-based recommendation for improving event
+                        recommendation. I improved precision of recommendation by ordering events based on distance.
                     </p>
                     <img class="project-pic" src="images/event_search.jpg" alt="LBS event search">
                 </div>
@@ -65,29 +59,32 @@
                 <div class="project project-two hidden">
                     <p>
                         I used Spring framework to build a web application for users to shop and order items online.
-                        This
-                        included Building a web
+                        This included Building a web
                         application based on Spring MVC to support item search and listing (dependency injection,
-                        inversion of
-                        control,
-                        REST API etc.), using Spring Security to implement OAuth2 based authentication and utilizing
-                        Hibernate
-                        to
-                        provide better support of database operations and developing a Spring Web Flow to support item
+                        inversion of control, REST API etc.), using Spring Security to implement OAuth2 based authentication and utilizing
+                        Hibernate to provide better support of database operations and developing a Spring Web Flow to support item
                         ordering.
                     </p>
                     <img class="project-pic" src="images/shopping.jpg" alt="shopping website example">
                 </div>
             </div>
-
         </div>
     </div>
 
-
     <!-- motivational word -->
     <footer>
-
+        <p>With the new day comes new strength and new thoughts</p>
     </footer>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "top-nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "top-nav";
+        }
+    }
+</script>
 </body>
 
 </html>
