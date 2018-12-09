@@ -14,15 +14,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link href="/lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+    <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="projects">
-        <div class="proj-nav-header">
-            <nav class="header-nav proj-nav">
+    <div class="education">
+        <div class="edu-nav-header">
+            <nav class="header-nav edu-nav">
                 <div class="menu-icon">
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
@@ -39,75 +39,67 @@
                 </div>
             </nav>
         </div>
-        <!-- Project Section -->
-        <section class="main-section">
-            <div class="project-content">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <h5>Event Search and Recommendation</h5>
-                            <p>
-                                I designed an interactive web page for users to search events and updata
-                                preferences
-                                and view
-                                the recommendation by using AJAX technology. This included builting databses with
-                                MySQL
-                                and MongoDB to store user
-                                information and preference, Creating Java servlets with RESTful APIs to handle HTTP
-                                requests and responses
-                                message, designing the content-based recommendation for cold start and the
-                                user-based
-                                recommendation for improving event
-                                recommendation.
-                            </p>
-                            <div class="carousel-img">
-                                <img class="d-block w-50" src="images/recommendation.png" alt="LBS event search">
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                        <div class="carousel-item">
-                            <h5>Online Shopping and Ordering System</h5>
-                            <p>
-                                I used Spring framework to build a web application for users to shop and order
-                                items
-                                online.
-                                This included Building a web
-                                application based on Spring MVC to support item search and listing (dependency
-                                injection,
-                                inversion of control, REST API etc.), using Spring Security to implement OAuth2
-                                based
-                                authentication and utilizing
-                                Hibernate to provide better support of database operations and developing a Spring
-                                Web
-                                Flow to support item
-                                ordering.
-                            </p>
-                            <div class="carousel-img">
-                                <img class="d-block w-50" src="images/shopping-system.jpg" alt="shopping website example">
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
+
+        <!-- main section -->
+        <section class="education-section">
+            <!-- graduate -->
+            <div class="graduate-p">
+                <h1>University of Michigan</h1>
+                <p>
+                    All my graduate memory is about University of Michigan. Ann arbor is a peaceful and lovely
+                    city.
+                    I believe fall is the most attractive season in Michigan.
+                </p>
+            </div>
+
+            <div class="graduate">
+                <div class="g-left-part">
+                    <img src="images/uofm_lib.jpg" alt="Libaray in center campus at University of Michigan">
+                    <img class="not-top-img" src="images/uofm_sbd.jpg" alt="Sleeping Bear dunes in Michigan">
+                </div>
+                <div class="g-mid-part">
+                    <div class="video">
+                        <iframe id="um-video" width="420" height="315" alt="um-video"src="https://www.youtube.com/embed/E0KVpg3q-tg"
+                            frameborder="0" allowfullscreen></iframe>
+                        <br>
+                        <a id="um-play-video" href="https://www.youtube.com/watch?v=E0KVpg3q-tg">Explore the life in Ann Arbor</a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                </div>
+                <div class='g-right-part'>
+                    <img src="images/uofm_football.jpg" alt="Football at University of Michigan">
+                    <img class="not-top-img" src="images/uofm_roadtrip.jpeg" alt="Road trips in Fall at University of Michigan">
                 </div>
             </div>
-        </section>
 
+            <!-- undergraduate -->
+            <div class="undergraduate-p">
+                <h1>Tianjin University</h1>
+                <p>
+                    I come from China. My undergraduate life is in Tianjin University. Tianjin is a coastal city
+                    and
+                    Tianjin University is a beatiful college to study and live. <b>(need to review)</b>
+                </p>
+            </div>
+            <div class="undergraduate">
+                <div class="ug-left-part">
+                    <img src="images/tju_lake.jpg" alt="Lake in Tianjin University">
+                    <img class="not-top-img" src="images/tju_fall.jpg" alt="Fall in Tianjin University">
+                    <img class="not-top-img" src="images/tju_haitang.jpg" alt="Flowers in Tianjin University">
+                </div>
+                <div class="ug-mid-part">
+                    <div class="video">
+                        <iframe id="tju-video" width="420" height="315" alt="tju-video" src="https://www.youtube.com/embed/qYRjTm4bwOo"
+                            frameborder="0" allowfullscreen></iframe>
+                        <br>
+                        <a id="tju-play-video" href="https://www.youtube.com/watch?v=qYRjTm4bwOo">The New Peiyang Campus</a>
+                    </div>
+                </div>
+                <div class='ug-right-part'>
+                    <img src="images/tju_moon.jpg" alt="Beatiful Moon in Tianjin University">
+                </div>
+            </div>
+
+        </section>
         <!-- motivational word -->
         <!-- Footer -->
         <footer class="page-footer font-small special-color-dark pt-4">
@@ -122,38 +114,37 @@
                     <!-- email -->
                     <li class="list-inline-item">
                         <a class="btn-floating btn-email mx-1" href="https://github.com/ZhenhuaGuo">
-                            <i class="fab fa-github-alt"></i>
+                            <i class="fab fa-github-alt"></i>github
                         </a>
                     </li>
                     <!-- facebook -->
                     <li class="list-inline-item">
                         <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/profile.php?id=100012072308094">
-                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-facebook"></i>facebook
                         </a>
                     </li>
                     <!-- twitter -->
                     <li class="list-inline-item">
                         <a class="btn-floating btn-tw mx-1" href="https://twitter.com/ZHENHUAGUO1">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-twitter"></i>twitter
                         </a>
                     </li>
                     <!-- google -->
                     <li class="list-inline-item">
                         <a class="btn-floating btn-gplus mx-1" href="https://plus.google.com/u/0/112596595557146425395">
-                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-google-plus-g"></i>google
                         </a>
                     </li>
                     <!-- linkedin -->
                     <li class="list-inline-item">
                         <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/zhenhuaguo/">
-                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-linkedin"></i>linkedin
                         </a>
                     </li>
                 </ul>
                 <!-- Social buttons -->
             </div>
             <!-- Footer Elements -->
-
         </footer>
     </div>
     <!-- Footer -->
@@ -164,9 +155,10 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="/lightbox2-master/dist/js/lightbox.js"></script>
+    <script src="lightbox2-master/dist/js/lightbox.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
     <script type="text/javascript">
         // Menu-toggle button
         $(document).ready(function () {
@@ -186,11 +178,10 @@
 
         $(window).on("scroll", function () {
             if ($(window).scrollTop()) {
-                $('.proj-nav').addClass('black');
+                $('.edu-nav').addClass('black');
             }
-
             else {
-                $('.proj-nav').removeClass('black');
+                $('.edu-nav').removeClass('black');
             }
         })
     </script>

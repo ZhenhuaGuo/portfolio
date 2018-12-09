@@ -20,9 +20,9 @@
 </head>
 
 <body>
-    <div class="projects">
-        <div class="proj-nav-header">
-            <nav class="header-nav proj-nav">
+    <div class="personal-skills">
+        <div class="skill-nav-header">
+            <nav class="header-nav white-nav">
                 <div class="menu-icon">
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
@@ -39,76 +39,39 @@
                 </div>
             </nav>
         </div>
-        <!-- Project Section -->
-        <section class="main-section">
-            <div class="project-content">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <h5>Event Search and Recommendation</h5>
-                            <p>
-                                I designed an interactive web page for users to search events and updata
-                                preferences
-                                and view
-                                the recommendation by using AJAX technology. This included builting databses with
-                                MySQL
-                                and MongoDB to store user
-                                information and preference, Creating Java servlets with RESTful APIs to handle HTTP
-                                requests and responses
-                                message, designing the content-based recommendation for cold start and the
-                                user-based
-                                recommendation for improving event
-                                recommendation.
-                            </p>
-                            <div class="carousel-img">
-                                <img class="d-block w-50" src="images/recommendation.png" alt="LBS event search">
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                        <div class="carousel-item">
-                            <h5>Online Shopping and Ordering System</h5>
-                            <p>
-                                I used Spring framework to build a web application for users to shop and order
-                                items
-                                online.
-                                This included Building a web
-                                application based on Spring MVC to support item search and listing (dependency
-                                injection,
-                                inversion of control, REST API etc.), using Spring Security to implement OAuth2
-                                based
-                                authentication and utilizing
-                                Hibernate to provide better support of database operations and developing a Spring
-                                Web
-                                Flow to support item
-                                ordering.
-                            </p>
-                            <div class="carousel-img">
-                                <img class="d-block w-50" src="images/shopping-system.jpg" alt="shopping website example">
-                            </div>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+        <!-- index section -->
+        <div class="skill-page">
+            <!-- skills -->
+            <section class="skills-section">
+                <div class="status">
+                    <h1>Who I am</h1>
+                    <p>
+                        I’m a current graduate student in Electrical and Computer Engineering in the University of
+                        Michigan. My major is Machine Learning. I’ve learned a lot about stuff of Machine Learning and
+                        Computer vision. I
+                        also self-taught a lot about data-structure and algorithm. I built some applications for mobile
+                        and
+                        web server.
+                        Popular libararies and frameworks I’ve used include MongoDB, Spring, Hibernate, React and
+                        Express.
+                    </p>
                 </div>
-            </div>
-        </section>
-
-        <!-- motivational word -->
+                <div class="skill-details">
+                    <div>
+                        <h1>What Can I do</h1>
+                    </div>
+                    <div class="skills">
+                        <p><i class="fas fa-plus" aria-hidden="true"></i> Java/Python</p>
+                        <p><i class="fas fa-plus" aria-hidden="true"></i> HTML/CSS/JS</p>
+                        <p><i class="fas fa-plus" aria-hidden="true"></i> React/Redux</p>
+                        <p><i class="fas fa-plus" aria-hidden="true"></i> Spring/Hibernate</p>
+                        <p><i class="fas fa-plus" aria-hidden="true"></i> MongoDB/MySQL</p>
+                        <p><i class="fas fa-plus" aria-hidden="true"></i> ML/NLP</p>
+                    </div>
+                </div>
+            </section>
+            <!-- add the skill -->
+        </div>
         <!-- Footer -->
         <footer class="page-footer font-small special-color-dark pt-4">
 
@@ -155,9 +118,13 @@
             <!-- Footer Elements -->
 
         </footer>
-    </div>
-    <!-- Footer -->
+        <!-- Footer -->
 
+    </div>
+
+    <!-- <script src="JS/fastclick.js"></script>
+    <script src="JS/scroll.js"></script>
+    <script src="JS/fixed-responsive-nav.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -174,7 +141,6 @@
                 $("nav ul").toggleClass("showing");
             });
         });
-        // nav hover effect
         $(document).ready(function () {
             $(".header-nav a").hover(function () {
                 $(this).addClass("animated bounceIn slow");
@@ -183,16 +149,16 @@
             });
         });
         // Scrolling Effect
-
         $(window).on("scroll", function () {
             if ($(window).scrollTop()) {
-                $('.proj-nav').addClass('black');
+                $('.white-nav').addClass('black');
+                $('.white-nav').removeClass('white');
             }
-
             else {
-                $('.proj-nav').removeClass('black');
+                $('.white-nav').removeClass('black');
+                $('.white-nav').addClass('white');
             }
-        })
+        });
     </script>
 </body>
 
