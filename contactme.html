@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="CSS/html5reset-1.6.1.css">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -20,37 +20,39 @@
 </head>
 
 <body>
-    <div class="contact-me">
+    <header>
+        <a class="skip-main" href="#main">Skip to main content</a>
+    </header>
+    <main class="contact-me">
         <header class="contact-nav-header">
             <nav class="header-nav white-nav">
                 <div class="menu-icon">
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
                 <div class="home">
-                    <a href="index.html">HOME</a>
+                    <a href="#main">WELCOME</a>
                 </div>
                 <div class="menu">
                     <ul>
+                        <li><a href="index.html">ABOUT</a></li>
                         <li><a href="education.html">EDUCATION</a></li>
                         <li><a href="projects.html">PROJECTS</a></li>
-                        <li><a href="skills.html">SKILLS</a></li>
                         <li><a href="contactme.html">CONTACT</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-
-        <section class="section pb-5">
+        <section id="main" class="section pb-5" tabindex="-1">
             <!--Section heading-->
             <h1 class="skill-title">
                 Don't be a stranger.
                 <br>
-                <span>Just say hello</span> 
+                <span>Just say hello</span>
             </h1>
             <!--Section description-->
             <p class="skill-para">
-                Feel free to get in touch with me.             
-                I am always open to discussing new projects, 
+                Feel free to get in touch with me.
+                I am always open to discussing new projects,
                 creative ideas or opportunities to be part of your vision.
             </p>
             <div class="row">
@@ -82,26 +84,29 @@
                 <div class="col-lg-7">
                     <!--Google map-->
                     <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
-                        <iframe src="https://maps.google.com/maps?q=Ann%20Arbor&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe title="map" src="https://maps.google.com/maps?q=Ann%20Arbor&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" style="border:0" alt="map" allowfullscreen></iframe>
                     </div>
                     <br>
                     <!--Buttons-->
                     <div class="row text-center">
                         <div class="col-md-4">
-                            <a class="btn-floating blue accent-1" href="https://www.google.com/maps/place/Ann+Arbor,+MI/@42.2734261,-83.80773,12z/data=!3m1!4b1!4m5!3m4!1s0x883cb00dd4431f33:0xdb09f94686c8b5e2!8m2!3d42.2808256!4d-83.7430378"><i class="fas fa-map-marker-alt"></i> Address</a>
+                            <a class="btn-floating blue accent-1" href="https://www.google.com/maps/place/Ann+Arbor,+MI/@42.2734261,-83.80773,12z/data=!3m1!4b1!4m5!3m4!1s0x883cb00dd4431f33:0xdb09f94686c8b5e2!8m2!3d42.2808256!4d-83.7430378"><i
+                                    class="fas fa-map-marker-alt"></i> Address</a>
                             <p>Ann Arbor, MI 48105</p>
                             <p>United States</p>
                         </div>
 
                         <div class="col-md-4">
-                            <a class="btn-floating blue accent-1" href="tel:7347800427"><i class="fa fa-phone"></i> Phone</a>
+                            <a class="btn-floating blue accent-1" href="tel:7347800427"><i class="fa fa-phone"></i>
+                                Phone</a>
                             <p>+01 (734)-780-0427</p>
                             <p>Mon-Fri, 8:00-22:00</p>
                         </div>
 
                         <div class="col-md-4">
-                            <a class="btn-floating blue accent-1" href="mailto:zhguo@umich.edu"><i class="fa fa-envelope"> Email</i></a>
+                            <a class="btn-floating blue accent-1" href="mailto:zhguo@umich.edu"><i class="fa fa-envelope">
+                                    Email</i></a>
                             <p>zhguo@umich.edu</p>
                         </div>
                     </div>
@@ -110,57 +115,54 @@
                 <!--Grid column-->
             </div>
         </section>
-        <!-- Footer -->
-        <footer class="page-footer font-small special-color-dark pt-4">
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
 
-            <!-- Footer Elements -->
-            <div class="container">
-                <!-- quote -->
-                <p class="text-center">Be a better man</p>
-                <!-- quote -->
-                <!-- Social buttons -->
-                <ul class="list-unstyled list-inline text-center">
-                    <!-- email -->
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-email mx-1" href="https://github.com/ZhenhuaGuo">
-                            <i class="fab fa-github-alt"></i>github
-                        </a>
-                    </li>
-                    <!-- facebook -->
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/profile.php?id=100012072308094">
-                            <i class="fab fa-facebook"></i>facebook
-                        </a>
-                    </li>
-                    <!-- twitter -->
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-tw mx-1" href="https://twitter.com/ZHENHUAGUO1">
-                            <i class="fab fa-twitter"></i>twitter
-                        </a>
-                    </li>
-                    <!-- google -->
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-gplus mx-1" href="https://plus.google.com/u/0/112596595557146425395">
-                            <i class="fab fa-google-plus-g"></i>google
-                        </a>
-                    </li>
-                    <!-- linkedin -->
-                    <li class="list-inline-item">
-                        <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/zhenhuaguo/">
-                            <i class="fab fa-linkedin"></i>linkedin
-                        </a>
-                    </li>
-                </ul>
-                <!-- Social buttons -->
-            </div>
-            <!-- Footer Elements -->
+        <!-- Footer Elements -->
+        <div class="container">
+            <!-- quote -->
+            <p class="text-center">Be a better man</p>
+            <!-- quote -->
+            <!-- Social buttons -->
+            <ul class="list-unstyled list-inline text-center">
+                <!-- email -->
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-email mx-1" href="https://github.com/ZhenhuaGuo">
+                        <i class="fab fa-github-alt"></i>github
+                    </a>
+                </li>
+                <!-- facebook -->
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/profile.php?id=100012072308094">
+                        <i class="fab fa-facebook"></i>facebook
+                    </a>
+                </li>
+                <!-- twitter -->
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/ZHENHUAGUO1">
+                        <i class="fab fa-twitter"></i>twitter
+                    </a>
+                </li>
+                <!-- google -->
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1" href="https://plus.google.com/u/0/112596595557146425395">
+                        <i class="fab fa-google-plus-g"></i>google
+                    </a>
+                </li>
+                <!-- linkedin -->
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/zhenhuaguo/">
+                        <i class="fab fa-linkedin"></i>linkedin
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+        </div>
+        <!-- Footer Elements -->
 
-        </footer>
-        <!-- Footer -->
-    </div>
-    <!-- <script src="JS/fastclick.js"></script>
-    <script src="JS/scroll.js"></script>
-    <script src="JS/fixed-responsive-nav.js"></script> -->
+    </footer>
+    <!-- Footer -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -177,10 +179,10 @@
                 $("nav ul").toggleClass("showing");
             });
         });
-        $(document).ready(function() {
-            $(".header-nav a").hover(function() {
+        $(document).ready(function () {
+            $(".header-nav a").hover(function () {
                 $(this).addClass("animated bounceIn slow");
-            }, function(){
+            }, function () {
                 $(this).removeClass("animated bounceIn slow");
             });
         });
