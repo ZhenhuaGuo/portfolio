@@ -176,6 +176,13 @@ nav.white a{
 }
 
 /* hover */
+
+.white-nav a:hover {
+  color:black;
+}
+.white-nav.black a:hover {
+  color:#fff;
+}
 .white-nav.white a:hover {
   color:black;
 }
@@ -228,14 +235,23 @@ nav ul li a {
   nav.black ul {
     background: #000;
   }
+  .white-nav a:hover {
+    color:#fff;
+  }
+  .white-nav.white a:hover {
+    color:#fff;
+  }
   .white-nav a {
-    color: white;
+    color: #fff;
   }
   .white-nav.white a {
-    color:white;
+    color:#fff;
   }
   /* a::after */
   nav.black a::after {
+    background-color: #fff;
+  }
+  .white-nav a::after {
     background-color: #fff;
   }
   .white-nav.white a::after {
@@ -258,8 +274,9 @@ nav ul li a {
 }
 
 footer p {
-  font-size: 20px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: 500;
 }
 
 /* skills page */
@@ -443,6 +460,13 @@ img{
 /* project page */
 /* ---------------------------------------------------------------------------------*/
 
+.projects h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: auto auto;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+}
 .project-content {
   margin: 5% 10%;
 }
@@ -451,9 +475,8 @@ img{
   font-size: 18px;
   padding-left:10px;
 }
-.carousel-item h5 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 30px;
+.carousel-item h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 10px;
 }
 /* use to change the color of the arrow icon */
