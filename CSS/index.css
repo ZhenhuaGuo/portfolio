@@ -74,6 +74,27 @@ a.skip-main:focus, a.skip-main:active {
   z-index:999;
 }
 
+
+/* Effect 4: bottom border enlarge */
+.cl-effect-4 {
+	padding: 0 0 10px;
+}
+
+.cl-effect-4::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background: #fff;
+	content: '';
+	opacity: 1;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+
 /* nav bar */
 .edu-nav-header {
   width: 100%;
@@ -143,6 +164,18 @@ nav.black a {
 nav.white a{
   color: black;
 }
+/* after */
+.white-nav a::after {
+  background-color: #000;
+}
+.white-nav.white a::after {
+  background-color: #000;
+}
+.white-nav.black a::after {
+  background-color: #fff;
+}
+
+/* hover */
 .white-nav.white a:hover {
   color:black;
 }
@@ -181,7 +214,7 @@ nav ul li a {
   display: none;
 }
 
-@media(max-width: 786px) {
+@media(max-width: 840px) {
   .home {
     position: fixed;
     top: 0;
@@ -200,6 +233,13 @@ nav ul li a {
   }
   .white-nav.white a {
     color:white;
+  }
+  /* a::after */
+  nav.black a::after {
+    background-color: #fff;
+  }
+  .white-nav.white a::after {
+    background-color: #fff;
   }
   .showing {
     max-height: 24em;
