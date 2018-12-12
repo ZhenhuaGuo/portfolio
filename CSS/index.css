@@ -281,7 +281,13 @@ footer p {
 
 /* skills page */
 /* ---------------------------------------------------------------------------------*/
-
+.name {
+  font-size:20px;
+}
+.name b {
+  font-size:40px;
+  font-family: cursive;
+}
 .skills-section{ 
   display: grid;
   grid-template-columns: 1fr;
